@@ -1,4 +1,3 @@
-//Домашнее задание 1
 function getArrayParams(...arr) {
   let min = arr[0];
   let max = arr[0];
@@ -10,12 +9,11 @@ function getArrayParams(...arr) {
     } else if (arr[i] > max) {
       max = arr[i];
     }
-   }
-    let avg = +(sum/arr.length).toFixed(2);
+  }
+  let avg = +(sum/arr.length).toFixed(2);
   return { min: min, max: max, avg: avg };
 }
 
-//Домашнее задание 2
 function summElementsWorker(...arr) {
   if (arr.length === 0) {
     return 0;
@@ -73,7 +71,7 @@ function averageEvenElementsWorker(...arr) {
   }
   return sumEvenElement / countEvenElement;
 }
-//Домашнее задание 3
+
 function makeWork (arrOfArr, func) {
   let maxWorkerResult = func(...arrOfArr[0]);
   for (let i = 0; i < arrOfArr.length; i++) {
@@ -82,5 +80,5 @@ function makeWork (arrOfArr, func) {
       maxWorkerResult = checkArr;
     }
   }
-  return maxWorkerResult;
+  return maxWorkerResult
 }
